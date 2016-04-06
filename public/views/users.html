@@ -1,0 +1,21 @@
+<h1>List Users</h1>
+<center>
+	<table style="width:100%" class="table">
+		<thead>
+			<th>Username</th>
+			<th>Fullname</th>
+			<th>Email</th>
+			<th>Mobile</th>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="user in users">
+				<td>{{user.username}}</td>
+				<td ucwords>{{user.name}}</td>
+				<td>{{user.email}}</td>
+				<td>{{user.mobile}}</td>
+			</tr>
+		</tbody>
+
+	</table>
+</center>

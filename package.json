@@ -1,0 +1,21 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "User management",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-loading-bar": "latest",
+    "body-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "method-override": "latest",
+    "mongoose": "latest",
+    "morgan": "^1.7.0",
+    "validator": "latest"
+  }
+}

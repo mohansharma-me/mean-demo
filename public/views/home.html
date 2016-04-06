@@ -1,0 +1,37 @@
+<center>
+	<form name="authForm" ng-submit="loginNow()" ng-show="show_form()">
+		<table>
+			<tr>
+				<td>Username :</td>
+				<td>
+					<input type="text" name="username" ng-model="username" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td>
+					<input type="password" name="password" ng-model="password" required/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2 style="text-align: center">
+					<br/>
+					<input type="submit" value="Login" />
+					<br/><br/>
+					<label style="color:{{msg_color}}">{{msg}}</label>
+					<ul>						
+						<li ng-show="authForm.username.$touched && authForm.username.$error.required">Username is required and at least 5 charactors long</li>
+						<li ng-show="authForm.password.$touched && authForm.password.$error.required">Password is required</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</form>
+</center>
+
+<div ng-show="!show_form()">
+	<h1>
+		Welcome <label>{{data().name}}</label>
+		<input type="button" ng-click="logout()" value="Logout" class="pull-right" />
+	</h1>
+</div>
